@@ -1,4 +1,4 @@
-<?php namespace Onovaes\ConfigLibrarie;
+<?php namespace App\Libraries;
 
 
 /**
@@ -6,7 +6,7 @@
  * 
  * @author Gabriel Novaes <gabriel@dothcom.net>
  * 
- * @package Onovaes\ConfigLibrarie
+ * @package App\Libraries
  */
 class Configuracoes
 {
