@@ -9,6 +9,11 @@ Requer **CodeIgniter 4**.
 
 composer require onovaes/library-configuracoes
 
+### Variaveis de Configuracoes
+
+API_CONF_URL='http://ms08_nginx/'
+API_CONF_KEY=''
+
 ## Usage
 
 $configuracoes = new  \App\Libraries\Configuracoes();
