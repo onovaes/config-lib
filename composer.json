@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ConfigLibrarie": "src/Libraries/Configuracoes.php"
+            "Onovaes\\ConfigLibrarie\\": "src/Libraries/Configuracoes.php"
         }
     }
 }
