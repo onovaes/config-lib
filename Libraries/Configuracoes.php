@@ -153,6 +153,9 @@ class Configuracoes
 		$opcoes['connect_timeout'] = 3;
 		$opcoes['http_errors'] = FALSE;
 		$opcoes['headers'] = ['apiKey'=> $this->api_conf_key , 'content-type' => 'application/json'];
+		
+		if ( isset($_SERVER['HTTP_X_FORWARDED_HOST']) )
+			$opcoes['headers'] = [ 'X-Forwarded-Host' => $_SERVER['HTTP_X_FORWARDED_HOST'] ];
 
 		$response = $curl->request('GET', $this->api_conf_url , $opcoes);
 		$code = $response->getStatusCode();
@@ -165,6 +168,7 @@ class Configuracoes
 		return $body;
 	}
     // -------------------------------------------------------------------
+
 
 }   // End of Name Library Class.
 
