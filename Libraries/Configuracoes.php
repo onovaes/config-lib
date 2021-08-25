@@ -1,4 +1,4 @@
-<?php namespace App\Libraries;
+<?php namespace Onovaes\ConfigLibrarie;
 
 
 /**
