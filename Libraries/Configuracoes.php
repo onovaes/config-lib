@@ -1,4 +1,4 @@
-<?php namespace Onovaes\ConfigLibrarie;
+<?php namespace Onovaes\ConfigLib;
 
 
 /**

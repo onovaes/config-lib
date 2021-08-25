@@ -22,7 +22,7 @@ API_CONF_KEY=''
 
 ## Usage
 
-$configuracoes = new  \App\Libraries\Configuracoes();
+$configuracoes = new \Onovaes\ConfigLib\Configuracoes();
 
 $configuracoes->get('DN_SITE_URL');
 

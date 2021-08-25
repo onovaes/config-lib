@@ -1,5 +1,5 @@
 {
-    "name": "onovaes/library-configuracoes",
+    "name": "onovaes/config-lib",
     "description": "A Librarie Configuracões é feita para obter as configuracoes de um Site junto ao microservico de configuracoes",
     "keywords": ["codeigniter","configuracoes","library"],
     "license": "MIT",
@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Onovaes\\ConfigLibrarie\\": "Libraries"
+            "Onovaes\\ConfigLib\\": "Libraries"
         }
     }
 }
