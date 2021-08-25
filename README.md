@@ -1,31 +1,41 @@
-# Librarie Configurações
+# ConfigLib
 
-Uma librarie para CodeIgniter 4 com a função de consultar o microserviço de configuracoes.
+O ConfigLib é uma librarie para fazer consultas ao microserviço de configurações
 
-
-## Requeriementos
-
-Requer **CodeIgniter 4**.
+Desenvolvida para **CodeIgniter 4**.
 
 
 ## Instalação
-
+```shell
 composer require onovaes/config-lib
+```
 
+#### Variaveis (.env) de Configurações
 
-### Variaveis de Configuracoes
-
+```
 API_CONF_URL='http://ms08_nginx/'
 
 API_CONF_KEY=''
+```
 
-
-## Usage
-
+## Utilizando a Lib
+```php
 $configuracoes = new \Onovaes\ConfigLib\Configuracoes();
 
 $configuracoes->get('DN_SITE_URL');
+```
+
+## Desenvolver para a ConfigLib
+Para modo de desenvolvimento você pode usar o repositório diretamente no diretorio do seu projeto:
+
+```shell
+my-project$ git clone git@github.com:onovaes/config-lib.git
+```
+Adicione em Config/Autoload.php, a liinha seguir (PSR-4) :
+```php
+'Onovaes\\ConfigLib\\'      => ROOTPATH . 'config-lib/Libraries',
+```
 
 
-## Support
-If you think you've found a bug please [Create an Issue](https://github.com/onovaes/config-lib/issues).
+## Suporte
+Se você pensa que achou um erro [crie um Issue](https://github.com/onovaes/config-lib/issues).

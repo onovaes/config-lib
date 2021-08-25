@@ -2,7 +2,7 @@
 
 
 /**
- * A Librarie Configuracões é feita para obter as configuracoes de um Site junto ao microservico de configuracoes
+ * A ConfigLib é uma librarie para obter as configuracoes de um Site junto ao microservico de configuracoes
  * 
  * @author Gabriel Novaes <gabriel@dothcom.net>
  * 
@@ -143,6 +143,9 @@ class Configuracoes
 	 */
 	private function consultaApiConfiguracoes()
 	{
+		if( $this->api_conf_url == '' )
+			throw new \Exception("Variável de ambiente API_CONF_URL não configurada");
+
 		$curl = \Config\Services::curlrequest();
 
 		$opcoes = [];
