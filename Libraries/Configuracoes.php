@@ -105,7 +105,7 @@ class Configuracoes
             throw new \Exception("Parece não haver nenhuma Configuracao Cadastrada");
 
         if (!isset($configuracoes[$nome_config]))
-            throw new \Exception("Configuracao ".$nome_config. " não encontrada ");
+            return FALSE;
 
         return $configuracoes[$nome_config];
     }
